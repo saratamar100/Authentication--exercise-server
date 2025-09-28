@@ -1,0 +1,23 @@
+{
+  "name": "authentication--exercise-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saratamar100/Authentication--exercise-server.git"
+  },
+  "author": "Sara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saratamar100/Authentication--exercise-server/issues"
+  },
+  "homepage": "https://github.com/saratamar100/Authentication--exercise-server#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
