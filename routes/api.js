@@ -6,6 +6,7 @@ const books = [
   { id: 2, title: "To Kill a Mockingbird", author: "Harper Lee" },
   { id: 3, title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
 ];
+const users = [{ username: "sara", password: "p1" }];
 router.get("/", (req, res) => {
   res.send("Hello World!");
 });
