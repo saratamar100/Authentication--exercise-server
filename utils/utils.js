@@ -1,5 +1,5 @@
-function genToken(user) {
+function genToken(username) {
   const randomPart = Math.random().toString(36).substring(2, 10);
-  return `${user.username}-${randomPart}`;
+  return `${username}-${randomPart}`;
 }
 module.exports = { genToken };

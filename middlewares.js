@@ -1,4 +1,4 @@
-const { isTokenActive } = require("./tokenService");
+const { isTokenActive } = require("./services/tokenService");
 
 const isLoggedIn = (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
