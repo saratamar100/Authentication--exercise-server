@@ -29,5 +29,15 @@ router.post("/login", (req, res) => {
     res.status(401).json({ message: "Invalid credentials" });
   }
 });
+//logout
+router.post("/logout", (req, res) => {
+  const token = req.headers.authorization.split(" ")[1];
+  const index = activeTokens.indexOf(token);
+  if (index > -1) {
+    activeTokens.splice(index, 1);
+    return res.json({ msg: "Logged out" });
+  }
+  return res.status(400).json({ msg: "Invalid token" });
+});
 
 module.exports = router;
